@@ -39,9 +39,10 @@
     </div>
     <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
   </header>
-  <h2 class="trends-title">Сейчас в тренде</h2>
   <section class="trends-now">
-    <div class="trend-1">
+    <h2 class="trends-title">Сейчас в тренде</h2>
+    <div class="trends">
+    <div class="trend trend-image-1">
       <div class="trend-post">
         <ul class="trend-tag">
           <li class="trend-tag-item"><a href="#0">Lifestyle</a>
@@ -52,7 +53,7 @@
         <h3 class="trend-title"><a href="#0">Сейчас в тренде: сад на подоконнике</a></h3>
       </div>
     </div>
-    <div class="trend-2">
+    <div class="trend trend-image-2">
       <div class="trend-post">
         <ul class="trend-tag">
           <li class="trend-tag-item"><a href="#0">Food</a>
@@ -61,7 +62,7 @@
         <h3 class="trend-title"><a href="#0">Сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
       </div>
     </div>
-    <div class="trend-3">
+    <div class="trend trend-image-3">
       <div class="trend-post">
         <ul class="trend-tag">
           <li class="trend-tag-item"><a href="#0">Lifestyle</a>
@@ -72,7 +73,7 @@
         <h3 class="trend-title"><a href="#0">Собираемся в первый поход в горы</a></h3>
       </div>
     </div>
-    <div class="trend-4">
+    <div class="trend trend-image-4">
       <div class="trend-post">
         <ul class="trend-tag">
           <li class="trend-tag-item"><a href="#0">Food</a>
@@ -82,6 +83,7 @@
         </ul>
         <h3 class="trend-title"><a href="#0">Сейчас в тренде: сколько витамина С в лимонах?</a></h3>
       </div>
+    </div>
     </div>
   </section>
   <div class="page">
@@ -243,20 +245,21 @@
     <h2 class="handmade-title">Наши изделия</h2>
     <div class="handmade-items">
       <div class="handmade-item">
-        <img class="handmade-image" src="images/shop-item-desk1.jpg">
+        <picture >
+          <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+          <img class="handmade-image" src="images/shop-item-desk1.jpg" alt="">
+        </picture> 
         <div class="handmade-post">
           <h2 class="handmade-title-item">Подушки на диван</h2>
           <p class="handmade-text">Набор из двух подушек с модными принтами. Видео о создании <a
-              class="handmade-text-link"><span>здесь.</span></a></p>
+              class="handmade-text-link">здесь.</a></p>
           <footer class="footer-buy">
             <div class="buy">
               <span class="cost-price">
-                <span class="last-cost">1000</span>
-                <span class="cost-rub">₽</span>
+                <span class="last-cost">1000 ₽</span>
               </span>
               <span class="cost-price-new">
-                <span class="new-cost">800</span>
-                <span class="cost-rub">₽</span>
+                <span class="new-cost">800 ₽</span>
               </span>
             </div>
             <button class="button-buy" type="submit">В магазин</button>
@@ -264,17 +267,19 @@
         </div>
       </div>
       <div class="handmade-item">
-        <img class="handmade-image" src="images/shop-item-desk2.jpg" alt="">
+        <picture class="handmade-image">
+          <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+          <img class="handmade-image" src="images/shop-item-desk2.jpg" alt="">
+        </picture>
         <div class="handmade-post">
           <h2 class="handmade-title-item">Кукла «Зайчик»</h2>
           <p class="handmade-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
-              class="handmade-text-link"><span>весенняя
-                серия постов</span></a> в блоге и несколько подкастов.</p>
+              class="handmade-text-link">весенняя
+                серия постов</a> в блоге и несколько подкастов.</p>
           <footer class="footer-buy">
             <div class="buy">
               <span class="cost-price-new">
-                <span class="new-cost">3500</span>
-                <span class="cost-rub">₽</span>
+                <span class="new-cost">3500 ₽</span>
               </span>
             </div>
             <button class="button-buy" type="submit">В магазин</button>
@@ -282,29 +287,30 @@
         </div>
       </div>
       <div class="handmade-item">
-        <img class="handmade-image" src="images/shop-item-desk3.jpg" alt="">
+        <picture >
+          <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+          <img class="handmade-image" src="images/shop-item-desk3.jpg" alt="">
+        </picture>
         <div class="handmade-post">
           <h2 class="handmade-title-item">Шестиугольная рамка</h2>
           <p class="handmade-text">Необычная рамка для украшения дома из видео <a
-              class="handmade-text-link"><span>«Как сделать рамку из подручных
-                средств за 30 минут»</span></a> </p>
+              class="handmade-text-link"> «Как сделать рамку из подручных
+                средств за 30 минут»</a></p>
           <footer class="footer-buy">
             <div class="buy">
               <span class="cost-price">
-                <span class="last-cost">500</span>
-                <span class="cost-rub">₽</span>
+                <span class="last-cost">500 ₽</span>
               </span>
               <span class="cost-price-new">
-                <span class="new-cost">400</span>
-                <span class="cost-rub">₽</span>
+                <span class="new-cost">400 ₽</span>
               </span>
             </div>
             <button class="button-buy" type="submit">В магазин</button>
         </div>
       </div>
       </footer>
+    </div>
   </section>
-
   <footer class="footer">
     <address>
       <ul class="social">
@@ -329,12 +335,14 @@
   <a href="#0" class="copyright-link">
     <p class="copyright">Copyright © 2009–2019 City Blog LLC </p>
   </a>
-  <div class="visually-hidden">
+  <div class="popup-bg">
     <div class="popup">
+      <svg class="popup-close" xmlns="http://www.w3.org/2000/svg" 
+      fill="none" viewBox="0 0 441 441"><path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg>
       <h2 class="popup-title">Ваш фидбек</h2>
       <form class="form">
         <label>Как часто вы заходите на сайт?
-          <input type="" placeholder="Почти каждый день">
+          <input class="popup-input" type="text" placeholder="Почти каждый день">
         </label>
         <label>Вы подписаны на e-mail рассылку?
           <label>
@@ -349,7 +357,6 @@
         </label>
       </form>
       <button class="submit">Отправить</button>
-      <button class="popup-close" type="button"></button>
     </div>
   </div>
 
