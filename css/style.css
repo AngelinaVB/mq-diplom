@@ -733,8 +733,7 @@
   height: 15px;
   background-image: url(../svg/form-x.svg);
   background-size: cover;
-  background-repeat: no-repeat;
-  
+  background-repeat: no-repeat; 
 }
 
 .popup-title {
@@ -796,30 +795,33 @@
 
 .input-radio {
   display: flex;
-
+  flex-wrap: nowrap;
+  width: 50%;
 }
 
 .radio {
-  width: 100%;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   
-  -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: 5%;
+  padding: 10px;
   margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .radio-yes {
   background-image: url(../svg/form-circle.svg);
-
 }
 
 .radio-no {
   background-image: url(../svg/form-empty-circle.svg);
+}
+
+input[type="radio" i] {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .popup-textarea {
@@ -838,18 +840,22 @@
   margin-top: 10px;
 }
 
+.popup-textarea:focus {
+  border: 1px #b59f5b solid; 
+}
+
 .popup-btn {
   width: 100%;
   height: 45px;
   box-sizing: border-box;
   background-color: #b59f5b;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 14px;
-      color: #ffffff;
-      outline-style: none;
-      border: none;
-      cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
 }
 
 .popup-btn:hover {

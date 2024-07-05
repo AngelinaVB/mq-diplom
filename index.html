@@ -335,7 +335,7 @@
   <a href="#0" class="copyright-link">
     <p class="copyright">Copyright © 2009–2019 City Blog LLC </p>
   </a>
-  <div class="">
+  <div class="visually-hidden">
     <div class="popup-bg">
       <div class="popup">
         <button class="popup-close"><label class="visually-hidden"
@@ -352,12 +352,14 @@
             </select>
           </label>
           <label>Вы подписаны на e-mail рассылку?
-            <label class="input-radio">
-              <input class="radio radio-yes" type="radio">Да
+            <div class="input-radio">
+             <label class="radio">
+              <input class="radio-yes" type="radio">Да
             </label>
-            <label class="input-radio">
-              <input class="radio radio-no" type="radio">Нет
-            </label>
+            <label class="radio">
+              <input class="radio-no" type="radio">Нет
+            </label> 
+            </div>  
           </label>
           <label>Расскажите, какой контент вы хотели бы видеть на нашем сайте?
             <textarea class="popup-textarea">Может больше рецептов?</textarea>
@@ -368,5 +370,4 @@
     </div>
   </div>
 </body>
-
 </html>
