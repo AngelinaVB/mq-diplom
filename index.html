@@ -203,8 +203,8 @@
         <form class="form">
           <label class="visually-hidden" for="search">Поле для поиска</label>
           <input class="search" id="search" type="search" placeholder="Найти...">
-          <label class="visually-hidden" for="search-color">Нажмите кнопку, чтобы найти</label>
-          <button class="search-color" id="search-color" type="button"></button>
+          <button class="search-color" id="search-color" type="button"><span class="visually-hidden"
+              for="search-color">Нажмите кнопку, чтобы найти</span></button>
         </form>
       </section>
       <section>
@@ -335,23 +335,27 @@
   <a href="#0" class="copyright-link">
     <p class="copyright">Copyright © 2009–2019 City Blog LLC </p>
   </a>
-  <div class="visually-hidden">
+  <div class="">
     <div class="popup-bg">
       <div class="popup">
-        <svg class="popup-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
-          <path fill="#fff" stroke="#000"
-            d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
-        </svg>
+        <button class="popup-close"><label class="visually-hidden"
+        >Нажмите кнопку, чтобы закрыть окно</label>
+      </button>  
         <h2 class="popup-title">Ваш фидбек</h2>
         <form class="form">
           <label>Как часто вы заходите на сайт?
-            <input class="popup-input" type="text" placeholder="Почти каждый день">
+            <select class="popup-select" name="select" required>
+              <option>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
           </label>
           <label>Вы подписаны на e-mail рассылку?
-            <label>
+            <label class="input-radio">
               <input class="radio radio-yes" type="radio">Да
             </label>
-            <label>
+            <label class="input-radio">
               <input class="radio radio-no" type="radio">Нет
             </label>
           </label>
@@ -364,4 +368,5 @@
     </div>
   </div>
 </body>
+
 </html>

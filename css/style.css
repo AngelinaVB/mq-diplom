@@ -37,7 +37,6 @@
   
   body {
     min-width: 1200px;
-    max-width: 1660px;
   }
   
   .news-tag:hover, .trend-tag:hover, .handmade-text-link:hover {
@@ -126,25 +125,21 @@
 }
 
 .trends-title {
-  position: relative;
   font-weight: bold;
   font-size: 20px;
   color: #0f0d0e;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 14px;
 }
 
 .trends-title::after {
   content: "";
-  position: absolute;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 14px;
   width: 60px;
   border-bottom: solid rgb(181, 159, 91, 0.4) 3px; 
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 800px;
-  z-index: -1;
 }
 
 .trends {
@@ -154,7 +149,7 @@
 
 .trend {
   width: 25%;
-  height: 350px;
+  min-height: 350px;
   
   display: flex;
   flex-direction: column;
@@ -223,7 +218,7 @@
 }
 
 .trend-title:hover {
-  text-shadow: 1px 1px #ffffff;
+  color: #b59f5b;
 }
 
   .page {
@@ -280,7 +275,7 @@
   }
 
   .news-title:hover {
-    text-shadow: 0.5px 0.5px #0f0d0e;
+    color: #b59f5b;
   }
   
   .news-text {
@@ -314,32 +309,27 @@
   }
   
   .title-sidebar {
-    position: relative;
     font-weight: bold;
     font-size: 14px;
     color: #0f0d0e;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 14px;
-    z-index: 0;
   }
 
   .title-sidebar::after, .title-sidebar-mail::after, .title-sidebar-tags::after, .title-sidebar-topic::after {
     content: " ";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 14px;
     width: 60px;
     border-bottom: solid rgb(181, 159, 91, 0.4) 3px; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 105px;
-    z-index: -1;
   }
   
   .widgets {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    margin-top: 30px;
   }
   
   .article {
@@ -406,7 +396,7 @@
     height: 45px;
     bottom: 0;
     right: 0;
-    top: 67px; 
+    top: 52px; 
     border: none;
     background-color: #b59f5b;
     padding: 15px;
@@ -418,7 +408,7 @@
     z-index: 1;
   }
   
-  .search:hover {
+  .search:focus {
     outline: 1px #b59f5b solid;
   }
   
@@ -427,14 +417,12 @@
   }
   
   .title-sidebar-mail {
-    position: relative;
     margin-top: 61px;
     font-weight: bold;
     font-size: 14px;
     color: #0f0d0e;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 14px; 
   }
   
   .email {
@@ -449,8 +437,6 @@
     background-color: #f4f7f6;
     outline-style: none;
     border: none;
-  
-    z-index: 0;
   }
   
   .email:focus {
@@ -472,18 +458,16 @@
   }
   
   .button:hover {
-    border: 2px #797272 solid;
+    background-color: #323232;
   }
   
   .title-sidebar-tags {
-    position: relative;
     margin-top: 61px;
     font-weight: bold;
     font-size: 14px;
     color: #0f0d0e;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 14px;
   }
   
   .tags-list {
@@ -510,14 +494,12 @@
   }
   
   .title-sidebar-topic {
-    position: relative;
     margin-top: 61px;
     font-weight: bold;
     font-size: 14px;
     color: #0f0d0e;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 14px;
   }
   
   .topic-list {
@@ -555,7 +537,6 @@
   }
   
   .handmade-title {
-    position: relative;
     font-weight: bold;
     font-size: 20px;
     color: #0f0d0e;
@@ -566,20 +547,19 @@
   
   .handmade-title::after {
     content: "";
-    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 14px;
     width: 60px;
     border-bottom: solid rgb(181, 159, 91, 0.4) 3px; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 530px;
-    z-index: -1;
   }  
 
   .handmade-items { 
   display: flex;
   gap: 110px;
   justify-content: center;
+  align-items: stretch;
   padding-top: 30px;
   margin: 0 20px;
   font-family: Open Sans, sans-serif;
@@ -588,15 +568,18 @@
   .handmade-item {
    display: flex;
    flex-direction: column;
+   align-items: stretch;
+   justify-content: stretch;
    width: 33.33%;
   }
   
   .handmade-post {
     box-sizing: border-box;
-    min-height: 266px;
     border: solid #b59f5b 3px;
     margin: -30px -20px;
     padding: 20px 15px;
+    align-self: flex-end;
+    flex-grow: 1;
   }
   
   .handmade-title-item {
@@ -649,21 +632,21 @@
   .button-buy {
     width: 140px;
     box-sizing: border-box;
-      background-color: #b59f5b;
-      margin-top: 17px;
-      padding: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 14px;
-      color: #ffffff;
+    background-color: #b59f5b;
+    margin-top: 17px;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
     
-      outline-style: none;
-      border: none;
+    outline-style: none;
+    border: none;
   }
   
-.button-buy:hover {
-  border: 2px #797272 solid;
-}
+  .button-buy:hover {
+    background-color: #323232;
+  }
 
   .footer {
     max-width: 1145px;
@@ -708,10 +691,6 @@
     background-image: url("../svg/003-tumblr.svg");
   }
   
-  .copyright-link {
-    width: 370px;
-  }
-  
   .copyright {
     font-family: Open Sans, sans-serif;
     margin: 70px auto;
@@ -723,42 +702,42 @@
 
   .popup-bg {
     position: fixed;
+    display: flex;
+    justify-self: center;
+    align-self: center;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.8);
+    
+    background: rgba(0,0,0,0.6);
   }
   
   .popup {
-    position: absolute;
     box-sizing: border-box;
     width: 390px;
-    height: 580px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transform: translate(150%, 50%);
     background-color: #ffffff;
-
     padding: 60px 30px;
+    margin: auto;
     font-family: Open Sans, sans-serif;
   }
 
 .popup-close {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: -20px;
-  right: 0;
   cursor: pointer;
 }
 
+.popup-close::after {
+  display: block;
+  content: " ";
+  width: 15px;
+  height: 15px;
+  background-image: url(../svg/form-x.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
 .popup-title {
-  position: relative;
   font-weight: bold;
   font-size: 20px;
   color: #0f0d0e;
@@ -769,27 +748,25 @@
 }
 
 .popup-title:after {
-  content: " ";
-  position: absolute;
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 60px;
   border-bottom: solid #b59f5b;
   opacity: 0.4;
-  top: 0;
-  right: 0;
-  left: 120px;
-  bottom: 0;
-  z-index: -1;
+  margin-top: 10px;
 }
 
 .form {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
-.popup-input {
+.popup-select {
     width: 100%;
     height: 45px;
     margin-top: 10px;
@@ -797,30 +774,48 @@
     padding-left: 10px;
     font-weight: normal;
     font-size: 13px;
-    color: #000000;
+    color: #797272;
     background-color: #f4f7f6;
     outline-style: none;
     border: none;
     z-index: 0;
+    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 
     background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
-    background-size: 3% 15%;
-    background-position: center right 10px;
+    background-size: 3%;
+    background-position: center right 15px;
+}
+
+.popup-select:focus {
+  border: 1px #b59f5b solid; 
+}
+
+.input-radio {
+  display: flex;
+
 }
 
 .radio {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   padding: 10px;
-  position: absolute;
+  
+  -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
   cursor: pointer;
   background-repeat: no-repeat;
+  background-size: 5%;
   margin-top: 20px;
 }
 
 .radio-yes {
   background-image: url(../svg/form-circle.svg);
+
 }
 
 .radio-no {
@@ -855,4 +850,8 @@
       outline-style: none;
       border: none;
       cursor: pointer;
+}
+
+.popup-btn:hover {
+  background-color: #323232;
 }
